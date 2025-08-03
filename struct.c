@@ -17,5 +17,29 @@ struct Utilisateur
     char mot_de_passe[32];
 };
 
-struct utilisateur U;
-printf("%d\n", sizeof(u));
+struct Equipe{
+    int nom[12];
+    struct Utilisateur membres[8];
+};
+
+struct Equipe e;
+struct rectangle
+{
+    float longueur, largeur;
+};
+struct rectangle r ={5.0, 3.0} , t;
+
+typedef struct{
+    float rouge,vert,bleu;
+}couleur;
+
+
+
+int main(){
+    couleur jaune = {1.0, 1.0, 0.0};
+    t=r;
+    e.membres[0].numero_de_client = 123;
+    printf("%f %f\n", r.longueur, r.largeur);
+
+    return 0;
+}
